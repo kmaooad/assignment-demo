@@ -4,29 +4,21 @@ namespace KmaOoad18.Assignments.Demo
 {
     public class HelloCsharp
     {
-        private const int CsharpBirthYear = 2000;
+        private static readonly DateTime CsharpFirstRelease = new DateTime(2002, 1, 1);
 
-        public int GetCsharpAge()
+        public static int CalculateAge(DateTime currentDate, DateTime birthDate)
         {
-            // Replace with your implementation
-            throw new NotImplementedException();
-        }
+            var age = -1;
+            
+            // Put your implementation here
+            // and assign age
 
-        private int GetAge(int currentYear, int birthYear)
-        {
-            // Replace with your implementation
-            throw new NotImplementedException();
-        }
-
-        public virtual int GetCurrentYear()
-        {
-            // Replace with your implementation
-            throw new NotImplementedException();
+            return age;
         }
 
         public static void Main(string[] args)
         {
-            // Get C# age here and print it to console
+            // Call CalculateAge(), get C# age, and print it to console
         }
     }
 }
