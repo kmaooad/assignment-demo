@@ -12,4 +12,5 @@ steps:
   inputs:
     command: test
     projects: '**/*.csproj'
-
+- script: dotnet publish --output $(Build.ArtifactStagingDirectory)
+- task: PublishBuildArtifacts@1
