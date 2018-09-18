@@ -8,5 +8,8 @@ pool:
 
 steps:
 - script: dotnet build
-- script: dotnet test
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*.csproj'
 
